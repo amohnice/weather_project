@@ -31,9 +31,9 @@
 
 4. Set Up Environment Variables
 
- Create a .env file in the root directory and add:
+Create a .env file in the root directory if it doesn't exist and add:
 
-        OPENWEATHERMAP_API_KEY=your_actual_api_key_here
+    OPENWEATHERMAP_API_KEY=your_actual_api_key_here
 
 5. Run Migrations
 
@@ -57,14 +57,15 @@
 ## Folder Structure
 
 weather_project/
-│── weather/
+│
+├── weather/
 │   ├── templates/
-│   │   ├── weather/
-│   │   │   ├── weather.html
+│   │   └── weather/
+│   │       └── weather.html
 │   ├── views.py
 │   ├── urls.py
-│── weather_project/
-│── .env
-│── manage.py
-│── requirements.txt
-
+│
+├── weather_project/
+├── .env
+├── manage.py
+└── requirements.txt
